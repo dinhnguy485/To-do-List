@@ -1,4 +1,4 @@
-todo = []
+todo = ["Science", "Math", "History", "Com-sci"]
 
 if __name__ == '__main__':
     print("Welcome to Tri Nguyen's to-do list")
