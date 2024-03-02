@@ -1,4 +1,5 @@
-todo = []
+todo = ["Science", "Math", "History", "Com-sci"]
+
 
 if __name__ == '__main__':
     print("Welcome to Tri Nguyen's to-do list")
@@ -11,11 +12,17 @@ if __name__ == '__main__':
         print("5. Quit")
 
         choice = input("choose a task: ")
-
+        print(todo)
         if (choice == "1"):
-            add = input("add a task: ")
-            todo.append (add)
-            print(add, "was added to the to do list")
+            add = int(input("add a description to task: "))
+
+            if(0<=add<(len(todo)+1)):
+                add = add-1
+                description= input("Add task description: ")
+                todo[add] = todo[add] + ": " + description
+                print (todo)
+            else:
+                print("task is not available")
 
 
         elif (choice =="2"):
@@ -44,8 +51,6 @@ if __name__ == '__main__':
                     print("please enter a valid number:")
             else:
                 print("the todo list is empty")
-
-
 
         elif (choice == "4"):
             print (todo)
