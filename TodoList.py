@@ -1,61 +1,62 @@
 todo = ["Science", "Math", "History", "Com-sci"]
 
 
-def listtask():
-    print("\n")
-    print("-----------------------")
-    for i, task in enumerate(todo):
-        print(f"Task #{i+1}: {task}")
-
-
 if __name__ == '__main__':
     print("Welcome to Tri Nguyen's to-do list")
     while True:
         print("\n")
-        print("-----------------------")
-        print("1. Add a task")
+        print("1. Add a work")
         print("2. Mark as done")
-        print("3. Delete a task")
-        print("4. Quit")
+        print("3. Delete a work")
+        print("4. List task")
+        print("5. Quit")
 
-        choice = input("Choose a task: ")
-        if choice == "1":
-            listtask()
-            add = int(input("Add a task to: "))
+        choice = input("choose a task: ")
+        print(todo)
+        if (choice == "1"):
+            add = int(input("add a description to task: "))
 
-            if 0 <= add < (len(todo)+1):
+            if(0<=add<(len(todo)+1)):
                 add = add-1
-                description = input("Add task description: ")
-                todo[add] += f": {description}"
-                deadline = input("Add a deadline: ")
-                todo[add] += f" (Deadline: {deadline})"
-
-                listtask()
+                description= input("Add task description: ")
+                todo[add] = todo[add] + ": " + description
+                print (todo)
             else:
-                print("Task is not available")
+                print("task is not available")
 
-        elif choice == "2":
-            listtask()
+
+        elif (choice =="2"):
+            print(todo)
             done = int(input("Mark as done: "))
-            if 0 <= done < (len(todo)+1):
-                done = done -1
-                todo[done] += " (done)"
-                listtask()
+            if (todo):
+                if(0<=done<(len(todo)+1)):
+                    done = done - 1
+                    todo[done] = todo[done] + " (done)"
+                    print(todo)
+                else:
+                    print("task is not available")
             else:
-                print("Task is not available")
+                print("to-do list is empty")
 
-        elif choice == "3":
-            listtask()
-            delete = int(input("Remove a task: "))
-            if 0 <= delete < (len(todo)+1):
-                delete = delete -1
-                del todo[delete]
-                listtask()
+
+        elif (choice == "3"):
+            print(todo)
+            delete = int(input("remove a task: "))
+            if (todo):
+                if (0 <= delete < (len(todo)+1)):
+                    delete = delete - 1
+                    del todo[delete]
+                    print(todo)
+                else:
+                    print("please enter a valid number:")
             else:
-                print("Please enter a valid number")
+                print("the todo list is empty")
 
-        elif choice == "4":
+        elif (choice == "4"):
+            print (todo)
+
+        elif(choice == "5"):
             exit()
 
         else:
-            print("Please enter a valid number")
+            print("please enter a valid number")
