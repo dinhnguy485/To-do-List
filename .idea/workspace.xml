@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52c71c96-5474-4dab-b6c2-a0c4b8492fc7" name="Changes" comment="To-do list">
+    <list default="true" id="52c71c96-5474-4dab-b6c2-a0c4b8492fc7" name="Changes" comment="print fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TodoList.py" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList.py" afterDir="false" />
     </list>
@@ -103,11 +103,45 @@
       <option name="project" value="LOCAL" />
       <updated>1709420011802</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="To-do list">
+      <option name="closed" value="true" />
+      <created>1709421371353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709421371353</updated>
+    </task>
+    <task id="LOCAL-00006" summary="To-do list">
+      <option name="closed" value="true" />
+      <created>1709421460616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709421460616</updated>
+    </task>
+    <task id="LOCAL-00007" summary="To-do list">
+      <option name="closed" value="true" />
+      <created>1709423782015</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709423782015</updated>
+    </task>
+    <task id="LOCAL-00008" summary="print fixed">
+      <option name="closed" value="true" />
+      <created>1709423849772</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709423849772</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="To" />
     <MESSAGE value="To-do list" />
-    <option name="LAST_COMMIT_MESSAGE" value="To-do list" />
+    <MESSAGE value="print fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="print fixed" />
   </component>
 </project>
