@@ -1,11 +1,20 @@
 todo = ["Science", "Math", "History", "Com-sci"]
-
-
+import datetime
+import os
 def listtask():
     print("\n")
     print("-----------------------------")
     for i, task in enumerate(todo):
         print(f"Task #{i + 1}: {task}")
+
+def alarm():
+    alarmM = int(input("Enter a month: "))
+    alarmD = int(input("Enter a date: "))
+    os.system('clear')
+    print(f"alarm is set on {alarmD}/{alarmM}")
+    now = datetime.datetime.now()
+    if now.date() == alarmD and now.Month == alarmM:
+            print("Get to work, today is the due date")
 
 
 if __name__ == '__main__':
